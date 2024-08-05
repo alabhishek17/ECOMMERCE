@@ -22,6 +22,9 @@ mongoose
 .then(()=>console.log("DB connected"))
 .catch((err)=>console.log("erro to connect DB",err))
 
+app.use("/",(req,res)=>{
+    res.sendFile(__dirname+"/index.html")
+})
 //api router
 app.use("/api/v1/user",Userrouter)
 app.use("/api/v1/product",productRouter)
