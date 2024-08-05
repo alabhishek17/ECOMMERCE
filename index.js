@@ -3,10 +3,10 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv")
 
 const authmiddlware = require("./middlerware/authMiddleware")
-const Userrouter= require("../project/routes/user");
-const productRouter = require("../project/routes/product")
-const wishlistRoute = require("../project/routes/wishlist");
-const Orderrouter = require("../project/routes/order")
+const Userrouter= require("./routes/user");
+const productRouter = require("./routes/product")
+const wishlistRoute = require("./routes/wishlist");
+const Orderrouter = require("./routes/order")
 //env config
 dotenv.config();
 
