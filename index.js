@@ -2,7 +2,7 @@ const express = require("express")
 const mongoose = require("mongoose");
 const dotenv = require("dotenv")
 
-const authmiddleware = require("../project/middlerware/authmiddlware")
+const authmiddlware = require("../project/middlerware/authmiddlware")
 const Userrouter= require("../project/routes/user");
 const productRouter = require("../project/routes/product")
 const wishlistRoute = require("../project/routes/wishlist");
@@ -26,5 +26,5 @@ mongoose
 app.use("/api/v1/user",Userrouter)
 app.use("/api/v1/product",productRouter)
 app.use("/api/v1/wishlist",wishlistRoute)
-app.use("/api/v1/order",authmiddleware, Orderrouter)
+app.use("/api/v1/order",authmiddlware, Orderrouter)
 app.listen(40000,()=>console.log(`server is connected succesfully with port 40000`))
