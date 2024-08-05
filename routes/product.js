@@ -3,7 +3,7 @@ const UserSchema = require("../modles/user")
 
 const ProductContriller = require("../controllers/product")
 
-const authmiddleware = require("../middlerware/authmiddlware")
+const authmiddleware = require("../middlerware/authMiddleware")
 const roleMiddleware = require("../middlerware/rolemiddlware")
 
 const productRouter=express.Router()
